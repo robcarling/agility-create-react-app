@@ -1,0 +1,22 @@
+/* ---- News Posts ---- */
+.posts-listing{
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .section-news h3 {
+    margin-bottom: 40px;
+  }
+  .section-news .posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section-news .posts-list .post {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+  .section-news .posts-list .post h4 {
+    margin-top: 10px;
+  }
