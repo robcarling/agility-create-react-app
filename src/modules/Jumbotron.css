@@ -2,9 +2,10 @@
 .jumbotron {
     text-align: center;
     background-color: #000;
+    background-image: url(../img/jumbotron-BG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     color: #fff;
     padding: 90px 10px;
   }

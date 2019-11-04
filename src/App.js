@@ -9,6 +9,7 @@ import { PageRouter } from './agility-react'
 //Shared Components
 import PreviewBar from './PreviewBar'
 import GlobalHeader from './GlobalHeader'
+import GlobalFooter from './GlobalFooter'
 
 class App extends Component {
   componentDidMount() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route path="*" render={() => <PageRouter agility={this.props.agility} />} />
           </Switch>
         </main>
+        <GlobalFooter agility={this.props.agility} />
       </div>
     );
   }

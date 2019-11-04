@@ -46,7 +46,12 @@ class GlobalHeader extends Component {
 
   renderHeader = () => {
     if (this.state.contentItem != null) {
-      return <label>{this.state.contentItem.fields.siteName}</label>
+      return <div className="logo">
+        <a href="/" title={this.state.contentItem.fields.siteLogo.label}>
+          <img src={this.state.contentItem.fields.siteLogo.url} alt={this.state.contentItem.fields.siteLogo.label} />
+        </a>
+        <label>{this.state.contentItem.fields.siteName}</label>
+        </div>
     }
   }
 
@@ -66,7 +71,7 @@ class GlobalHeader extends Component {
       <header className="header">
         <div className="container">
           {this.renderHeader()}
-          <ul>
+          <ul className="global-nav">
             {this.renderLinks()}
           </ul>
         </div>

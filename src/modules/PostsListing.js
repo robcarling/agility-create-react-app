@@ -55,15 +55,15 @@ class PostsListing extends Component {
             let posts = [];
             this.state.posts.forEach(item => {
                 posts.push(
-                    <div className="post" key={item.contentID}>
+                    <li className="post" key={item.contentID}>
                         {item.fields.image &&
-                            <img src={item.fields.image.url + '?w=860'} alt={item.fields.image.label} />
+                            <Link to={this.state.dynamicUrls[item.contentID]}><img src={item.fields.image.url + '?w=860'} alt={item.fields.image.label} /></Link>
                         }
-                        <h2>
+                        <h4>
                             <Link to={this.state.dynamicUrls[item.contentID]}>{item.fields.title}</Link>
-                        </h2>
+                        </h4>
                         <p dangerouslySetInnerHTML={this.renderPostExcerpt(item.fields.details)}></p>
-                    </div>
+                    </li>
                 )
             })
 
@@ -76,7 +76,9 @@ class PostsListing extends Component {
             <section className="posts-listing">
                 <div className="container">
                     <h3>{this.props.item.fields.title}</h3>
-                    {this.renderPosts()}
+                    <ul className="blog-posts">
+                        {this.renderPosts()}
+                    </ul>
                 </div>
             </section>
         );

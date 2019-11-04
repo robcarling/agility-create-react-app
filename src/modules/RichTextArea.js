@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './RichTextArea.css'
 
 
 
@@ -12,7 +13,7 @@ class RichTextArea extends Component {
     render() {    
         const setHTML = this.setHTML();
         return (
-            <section className="container">
+            <section className="container rich-text">
                 <div dangerouslySetInnerHTML={setHTML}></div>
             </section>
         );

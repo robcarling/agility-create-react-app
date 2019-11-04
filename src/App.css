@@ -73,66 +73,6 @@ h2 { font-size: 2em; margin-bottom: 30px; }
 h3 { font-size: 1.75em; margin-bottom: 25px; }
 h4 { font-size: 1.25em; margin-bottom: 5px; }
 h5 { font-size: 1em; margin-bottom: 5px; }
-  /* =================================
-    Base Element Styles
-  ==================================== */
-  * {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    height: 100%;
-  }
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--gray);
-    margin: 0;
-    font-size: 15px;
-    font-family: 'Nunito';
-  }
-  a {
-    text-decoration: none;
-    color: var(--primary);
-    cursor: pointer;
-  }
-  img {
-    max-width: 100%;
-  }
-  p {
-    margin-bottom: 10px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5.h6 {
-    font-family: 'Poppins';
-    color: var(--gray-dark);
-  }
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 35px;
-  }
-  h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-  h3 {
-    font-size: 1.75em;
-    margin-bottom: 25px;
-  }
-  h4 {
-    font-size: 1.25em;
-    margin-bottom: 5px;
-  }
-  h5 {
-    font-size: 1em;
-    margin-bottom: 5px;
-  }
-  
-
 
 
 /* ---- Re-usable Elements ---- */
@@ -220,71 +160,6 @@ h5 { font-size: 1em; margin-bottom: 5px; }
 }
 .footer .row {
   text-align: center;
-}
-
-/* ---- Content Panel ---- */
-.content-panel {
-  padding: 60px 0;
-  border-bottom: 1px solid #dfdfdf;
-}
-.content-panel h4 {
-  font-size: 1.5em;
-}
-.content-panel .content {
-  display: flex;
-  justify-content: space-between;
-}
-.content-panel .content .text {
-  width: 60%;
-}
-.content-panel .content .image {
-  width: 35%;
-}
-/* ---- Features ---- */
-.section-features {
-  padding: 60px 0;
-  text-align: center;
-  border-bottom: 1px solid #dfdfdf;
-}
-.section-features h3 {
-  margin-bottom: 40px;
-}
-.section-features .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.section-features .features-list .feature {
-  width: 32%;
-}
-.section-features .features-list .feature img {
-  max-height: 100px;
-}
-.section-features .features-list .feature h4 {
-  margin-top: 10px;
-}
-.section-features .features-list .feature p {
-  padding: 0 20px;
-}
-/* ---- Logo Listing ---- */
-.section-logo-listing {
-  padding: 60px 0;
-  text-align: center;
-  border-bottom: 1px solid #dfdfdf;
-}
-.section-logo-listing h3 {
-  margin-bottom: 40px;
-}
-.section-logo-listing .logo-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.section-logo-listing .logo-list .logo {
-  width: 18%;
-}
-.section-logo-listing .logo-list .logo img {
-  max-height: 100px;
 }
 
 /* ---- Contact Form ---- */
