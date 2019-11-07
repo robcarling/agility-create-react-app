@@ -13,8 +13,10 @@ class RichTextArea extends Component {
     render() {    
         const setHTML = this.setHTML();
         return (
-            <section className="container rich-text">
-                <div dangerouslySetInnerHTML={setHTML}></div>
+            <section className="container">
+                <div className="rich-text">
+                    <div dangerouslySetInnerHTML={setHTML}></div>
+                </div>
             </section>
         );
     }

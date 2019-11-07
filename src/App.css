@@ -67,12 +67,12 @@ a {
 
 img { max-width: 100%; }
 p  { margin-bottom: 10px; }
-h1,h2,h3,h4,h5.h6 { font-family: 'Poppins'; color: var(--gray-dark); }
-h1 { font-size: 2.5em; margin-bottom: 35px; }
-h2 { font-size: 2em; margin-bottom: 30px; }
-h3 { font-size: 1.75em; margin-bottom: 25px; }
-h4 { font-size: 1.25em; margin-bottom: 5px; }
-h5 { font-size: 1em; margin-bottom: 5px; }
+h1,h2,h3,h4,h5.h6 { font-family: 'Poppins'; font-weight: bold; color: var(--gray-dark); }
+h1 { font-size: 2.5em; line-height: 1.25em; margin-bottom: 30px; }
+h2 { font-size: 2em; line-height: 1.25em; margin-bottom: 25px; }
+h3 { font-size: 1.75em; line-height: 1.2em; margin-bottom: 20px; }
+h4 { font-size: 1.25em; line-height: .9em; margin-bottom: 15px; }
+h5 { font-size: 1em; line-height: .85em; margin-bottom: 10px; }
 
 
 /* ---- Re-usable Elements ---- */
@@ -80,6 +80,7 @@ h5 { font-size: 1em; margin-bottom: 5px; }
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .row {
   max-width: 1200px;
@@ -152,40 +153,15 @@ h5 { font-size: 1em; margin-bottom: 5px; }
   width: 100%;
 }
 
-/* ---- Global Footer ---- */
-.footer {
-  background-color: var(--gray-dark);
-  color: var(--gray-light);
-  padding: 25px 0px;
-}
-.footer .row {
-  text-align: center;
-}
+/* Medium Break */
+@media (max-width: 900px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .flex-items {
+    flex-wrap: wrap;
+  }
 
-/* ---- Contact Form ---- */
-.section-contact-form form {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #dfdfdf;
-  padding: 30px;
-}
-.section-contact-form form p {
-  margin-bottom: 20px;
-}
-.section-contact-form form .form-group {
-  margin: 0 0 15px 0;
-}
-.section-contact-form form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-.section-contact-form form .form-group input,
-.section-contact-form form .form-group textarea {
-  min-height: 35px;
-  width: 99%;
-  padding: 3px;
-  border: 1px solid #dfdfdf;
-  border-radius: 3px;
-}
-.section-contact-form form .form-group textarea {
-  height: 100px;
 }
