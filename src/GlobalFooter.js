@@ -15,7 +15,7 @@ class GlobalFooter extends Component {
     try {
       //get the global footer
       let contentItemList = await api.getContentList({
-        referenceName: "GlobalFooter",
+        referenceName: "globalfooter",
         languageCode: this.props.agility.config.languageCode
       });
 
@@ -29,15 +29,9 @@ class GlobalFooter extends Component {
     }
   }
 
-  setHTML = () => {
-    return {__html: this.state.contentItem.fields.textblob};
-  }
-
   renderFooter = () => {
-    const setHTML = this.setHTML();
     if (this.state.contentItem != null) {
-      return <div dangerouslySetInnerHTML={setHTML}></div>
-      // return this.state.contentItem.fields.textblob
+      return <div dangerouslySetInnerHTML={{__html: this.state.contentItem.fields.footerText}}></div>
     }
   }
 
